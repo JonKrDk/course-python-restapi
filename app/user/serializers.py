@@ -2,11 +2,10 @@
 Serializers for the user API View.
 """
 from django.contrib.auth import get_user_model
+from rest_framework import serializers as rest_serializers
 
-from rest_framework import serializers
 
-
-class UserSerializer(serializers.ModelSerializer):
+class UserSerializer(rest_serializers.ModelSerializer):
     """Serializer for the user object."""
 
     class Meta:
